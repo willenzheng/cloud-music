@@ -1,5 +1,5 @@
 <template>
-  <div>404</div>
+  <div>关注</div>
 </template>
 
 <script>

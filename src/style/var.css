@@ -1,0 +1,16 @@
+:root {
+  --color-bg-light: #fff;
+  --color-bg-dark: #202020;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-bg-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: var(--color-bg-light);
+  }
+}

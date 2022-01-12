@@ -1,5 +1,5 @@
 <template>
-  <div>404</div>
+  <div>云村</div>
 </template>
 
 <script>

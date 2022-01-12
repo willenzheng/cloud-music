@@ -1,5 +1,5 @@
 <template>
-  <div>404</div>
+  <div>发现</div>
 </template>
 
 <script>

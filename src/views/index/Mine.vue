@@ -1,5 +1,5 @@
 <template>
-  <div>404</div>
+  <div>我的</div>
 </template>
 
 <script>

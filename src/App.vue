@@ -12,6 +12,6 @@
 #app {
   height: 100%;
   font-family: 'PingFangSC';
-  background: gray;
+  background: var(--color-bg);
 }
 </style>
