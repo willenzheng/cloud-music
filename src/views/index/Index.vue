@@ -1,21 +1,37 @@
 <!-- 首页 -->
 <template>
   <div class='index'>
-    <router-view></router-view>
+    <router-view />
     <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="search">标签</van-tabbar-item>
-      <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+      <van-tabbar-item
+        v-for="(item, index) in tabbarList"
+        :key="index"
+        icon="home-o"
+        replace
+        :to="item.route"
+      >{{item.name}}</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
 
-<script setup>
+<script>
 
-import { ref } from 'vue'
+import tabbar from '@/data/tabbar.json'
 
-const active = ref(0)
+export default {
+  setup() {
+    const tabbarList = tabbar
+    console.log(tabbarList)
+    let active = 1
+
+    return {
+      active,
+      tabbarList
+    }
+  },
+}
+
+
 
 </script>
 

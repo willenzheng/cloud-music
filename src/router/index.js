@@ -3,6 +3,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 const routes = [
   {
     path: '/',
+    redirect: '/explore',
     component: () => import('@/views/index/Index.vue'),
     children: [
       {
@@ -40,7 +41,6 @@ const routeConfig = {
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savePosition) {
-    console.log(to, from, savePosition)
     if (savePosition) {
       return savePosition
     } else {
