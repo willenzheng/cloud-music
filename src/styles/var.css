@@ -1,0 +1,30 @@
+/** defined origin color **/
+:root {
+  --color-white: white;
+  --color-black: #202020;
+  --color-red: red;
+  --color-gray: gray;
+  --color-gray-a: #aaa;
+}
+
+/** defined theme color **/
+:root {
+  --color-primary: var(--color-red);
+  --color-inactive: var(--color-gray-a);
+  --color-bg-light: var(--color-white);
+  --color-bg-dark: var(--color-black);
+}
+
+/** defined dark mode color **/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-bg-dark);
+  }
+}
+
+/** defined light mode color **/
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: var(--color-bg-light);
+  }
+}

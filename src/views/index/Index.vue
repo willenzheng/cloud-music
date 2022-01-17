@@ -2,12 +2,17 @@
 <template>
   <div class='index'>
     <router-view />
-    <van-tabbar v-model="active">
+    <van-tabbar
+      v-model="active"
+      active-color="var(--color-primary)"
+      inactive-color="var(--color-inactive)"
+    >
       <van-tabbar-item
         v-for="(item, index) in tabbarList"
         :key="index"
         icon="home-o"
         replace
+        
         :to="item.route"
       >{{item.name}}</van-tabbar-item>
     </van-tabbar>
