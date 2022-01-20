@@ -2,6 +2,7 @@
 <template>
   <div class='index'>
     <router-view />
+    <i class="iconfont icon-explore" />
     <van-tabbar
       v-model="active"
       active-color="var(--color-primary)"
