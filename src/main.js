@@ -7,8 +7,9 @@ import './styles/var.css'
 const app = createApp(App)
 app.use(router)
 
-import { Tabbar, TabbarItem } from 'vant'
-app.use(Tabbar)
+import { Button, Tabbar, TabbarItem } from 'vant'
+app.use(Button)
+   .use(Tabbar)
    .use(TabbarItem)
 
 app.mount('#app')
