@@ -25,7 +25,9 @@ const iconList = ['','','','','','','']
     height: 50px;
     border-radius: 50%;
     background: rgb(238, 199, 196);
-    margin-right: 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
 </style>

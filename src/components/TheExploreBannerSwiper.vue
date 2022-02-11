@@ -21,9 +21,16 @@ const bannerList = [
 <style lang="scss" scoped>
 .banner-swiper {
   background: #fff;
+  .van-swipe {
+    // &__indicators {
+    // }
+    :deep(.van-swipe__indicator) {
+      background: red;
+    }
+  }
   .image-wrapper {
     width: 90%;
-    margin: 20px auto;
+    margin: 0 auto;
     height: 100px;
     border-radius: 20px;
     background: #eee;

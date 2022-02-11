@@ -1,0 +1,1 @@
+// 防止tsconfig.json报“在配置文件tsconfig.json中找不到任何输入”
