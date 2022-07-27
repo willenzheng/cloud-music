@@ -1,7 +1,13 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+# 仿写网易云音乐
+本项目目的在于练手，尽可能还原网易云音乐的界面 UI 和交互。
+## 技术栈
+- Vue3
+- Vite
+- TypeScript
+- SCSS
+## 组件库
+- 当前：Vant + 自建组件
+- 目标：全部使用自建组件
+## 图标体系
+- Google Font
+- iconfont
